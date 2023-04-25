@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+body{
+    background-color: #1B2430;
+    color: aliceblue;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* logo y titulo  */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.logo img{
+    margin: 50px;
+    width: 200px;
+    height: 80px;
+}
+
+.title h1 {
+    /*reproducir la animación llamada fluido por una duración de 30 segundos,animación  ease-in-out para lograr un efecto más suave, y  bucle de animación infinito*/
+    animation: fluido 20s ease-in-out infinite;
+
+    /* degradado lineal linear-gradient con los colores deseados.estiro el fondo hasta el 300% del tamaño usando la propiedad background-size para darle espacio a la animación y que se mueva. */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+
+    /* configuro background-clip como texto y el text-fill-color (color de relleno de texto) como transparente para que mi color de fuente predeterminado no interfiera con mi degradado. */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 4em;
+    font-weight: bold;
+
+    text-align: center;
+
+  }
+  
+
+/* Creo la animación de fotogramas @keyframe clave llamada fluido y configuro fotogramas en las marcas de 0%, 50% y 100%. */
+  @keyframes fluido {
+      0% { background-position: 0 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0 50% }
+  }
+
+
+#text{
+    background-color: #FCC8D1;
+    border: none;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    border-radius: 10px;
+}
+
+
+
+.container{
+
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#error{
+    margin-top: 20px;
+}
+
+.error{
+
+    color:#e73c7e ;
+    font-size: 15px;
+    font-style: oblique;
+    margin-left: 60px;
+}
+
+
+#text{
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+
+.caja{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+aside{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: auto;
+}
+
+.box{
+    margin: 0 auto;
+    color: #FCC8D1;
+    font-size: x-large;
+
+    padding-left: 10px;
+
+}
+
+
+.copy{
+   margin: 100px 0 0 40%;
+}
+
+
+footer{
+    width: 100%;
+    padding: 0%;
+    height: auto;
+
+    position: fixed;
+     bottom: 0;
+    
+}
+
+.footer h6{
+    font-size: 10px;
+    color: aliceblue;
+    text-align: center;
+}
