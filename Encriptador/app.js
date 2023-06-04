@@ -79,16 +79,10 @@ const encriptador = () => {
     let error = document.querySelector(".error")
     error.innerHTML = "No debe contener caracteres especiales ni acentos"
 
-    // recarga la pagina luego de 5 segundos luego del mensaje de error
-    setTimeout(function() {
-      location.reload();
-    }, 4000);
-
   }
 };
 
 //funcion desencriptado
-
 /**
  * hecho con funciones regulares y el metodo replace()
  */
@@ -96,9 +90,7 @@ const encriptador = () => {
 const desencriptado = () => {
   let text = document.getElementById("text").value;
   let descript = text.toLowerCase();
-
   let especiales = text.match(/[^\w\s.]/g);
-
   if (especiales === null) {
     let result = document.querySelector(".box");
     descript = descript
@@ -118,7 +110,7 @@ const desencriptado = () => {
   }
 };
 
-
+// copia de texto
 let copiar = ()=>{
   let codigoAcopiar = document.querySelector(".box")
 
@@ -130,7 +122,45 @@ let copiar = ()=>{
   let res = document.execCommand("copy")
   window.getSelection().removeRange(seleccion)
 
-  alert("Texto copiado con exito")
-
+  // mensaje de que el texto fue copiado
+  let error = document.querySelector(".error")
+  error.innerHTML = "Texto copiado con exito!"
 
 }
+
+// limpieza de consola
+let limpiar=()=>{
+  let box= document.querySelector(".box")
+  // input type texto
+  let input_texto = document.querySelector("#text")
+  // espan error (mensaje de error)
+  let error = document.querySelector(".error")
+
+  //reemplaza por cadena vacia
+
+  // para acceder al contenido de texto
+  box.textContent = "";
+  // propiedad específica para los elementos de entrada de formulario.
+  input_texto.value= "";
+  error.textContent="";
+
+  console.log("contenedor box funcionando");
+}
+
+
+/**
+ * cambios:
+ * se agrega funcion limpiar() que reemplaza en input,caja de texto encriptado/ desencriptado y mensajes de error por cadenas de texto vacia.
+ */
+
+
+/**
+ * 
+ * falta:
+ * asociar funcion limpiar() con input de entrada y campo de error.
+ * dar estilo al resto
+ * usar fontawesome
+ * 
+ * 
+ */
+
