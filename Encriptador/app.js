@@ -22,18 +22,13 @@ El resultado debe ser mostrado en la pantalla.
 Extras:
 
 Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
-Tenemos un periodo de tiempo de cuatro semanas para desarrollar el proyecto y vamos a trabajar con el sistema ágil de desarrollo, utilizando el Trello de la siguiente forma:
 
-La columna Listos para iniciar presenta las tarjetas con elementos que aun no fueron desarrollados.
-En la columna En Desarrollo estarán los elementos que estés desarrollando en el momento. Al iniciar una tarea, podrás mover la tarjeta que contiene dicha tarea para esta columna.
-En la columna Pausado estarán los elementos que comenzaste a desarrollar, pero necesitaste parar por algún motivo.
-Por fin, en la columna Concluido estarán los elementos ya concluidos.
- */
+
 
 /**Se realiza con dos metodos distintos: */
 
-// funcion encriptado
 
+// funcion encriptado
 /**
  * 1. se convierte el texto en un array con split()
  * 2.con un switch dentro de un for se recorre el array y se reemplaza en casa caso evaluado su respectivo valor
@@ -76,8 +71,13 @@ const encriptador = () => {
     //se escribe el resultado
     result.innerHTML = toText;
   } else {
+    // muestra msj de error
     let error = document.querySelector(".error")
     error.innerHTML = "No debe contener caracteres especiales ni acentos"
+
+    let clear_er =()=>{error.innerHTML=""}
+
+    setTimeout(clear_er,2000)
 
   }
 };
@@ -103,9 +103,17 @@ const desencriptado = () => {
 
     // se escribe el resultado:
     result.innerHTML = descript;
+
+   
+
   } else {
-    let error = document.querySelector(".error")
+
+    // msj de error
+    var error = document.querySelector(".error")
     error.innerHTML = "No debe contener caracteres especiales ni acentos"
+    let clear_er =()=>{error.innerHTML=""}
+
+    setTimeout(clear_er,2000)
 
   }
 };
@@ -123,17 +131,21 @@ let copiar = ()=>{
   window.getSelection().removeRange(seleccion)
 
   // mensaje de que el texto fue copiado
-  let error = document.querySelector(".error")
-  error.innerHTML = "Texto copiado con exito!"
+  var error = document.querySelector(".error")
+   error.innerHTML = "Texto copiado con exito!"
+
+  let msj_clear =()=>{error.innerHTML = ""}
+  // clear mensaje
+  setTimeout(msj_clear,2000)
 
 }
 
-// limpieza de consola
+// limpieza de campos
 let limpiar=()=>{
   let box= document.querySelector(".box")
   // input type texto
   let input_texto = document.querySelector("#text")
-  // espan error (mensaje de error)
+  // span error (mensaje de error)
   let error = document.querySelector(".error")
 
   //reemplaza por cadena vacia
@@ -150,17 +162,10 @@ let limpiar=()=>{
 
 /**
  * cambios:
+ * se realiza cambios en estilos
  * se agrega funcion limpiar() que reemplaza en input,caja de texto encriptado/ desencriptado y mensajes de error por cadenas de texto vacia.
+ * se limpia msjs de error con setTimeout()
  */
 
 
-/**
- * 
- * falta:
- * asociar funcion limpiar() con input de entrada y campo de error.
- * dar estilo al resto
- * usar fontawesome
- * 
- * 
- */
 

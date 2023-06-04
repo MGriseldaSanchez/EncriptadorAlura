@@ -4,20 +4,21 @@
 
 
 body{
-    background:#0a3871;
+    background:linear-gradient(#141e30, #243b55);
 }
 
 .container-encript{
     display: flex;
     flex-direction: column;
-    background: aliceblue;
     margin: 10% auto;
     align-items: center;
     width: max-content;
     padding: 10vh;
     font-size: 2em;
     font-family: 'Raleway', sans-serif;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
 .logo-content{
@@ -33,28 +34,28 @@ body{
     position: relative;
     bottom: 40px;
     font-size: 1.5em;
-    color: #0a3871;
+    color: white;
 }
-
-
-.content-btn{
-    display: flex;
-    justify-content: space-evenly;
-    width: 75vh;
-    padding-top: 45px;
-    /* background: bisque; */
-}
-
-
 
 
 .box-text{
-    background: #393646;
+    border: 2px solid #0db4dd;
     overflow: auto;
     width: 65vh;
-    height: 18vh;
-    border-radius: 5px;
+    padding: 10px;
 }
+
+
+#text{
+    outline: none;
+    width: 100%;
+    border: none;
+    font-size: medium;
+    color: white;
+    padding-bottom: 3vh;
+}
+
+
 
 .box-text .box{
     display: inline;
@@ -62,50 +63,50 @@ body{
     outline: none;
     border: none;
     font-size: medium;
-    margin-left: 4vh;
-    color: var(--second-color);
+    color: white;
 }
 
-#text{
-    padding: 45px;
-    outline: none;
-    width: 100%;
-    border: none;
-    font-size: medium;
-    color: var(--second-color);
-}
-
-button{
-    font-size: medium;
-    padding: 15px;
-    color: var(--second-color);
-    background: #0a3871;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 120px;
-}
-
-button:not(.clear_):hover{
-    background-color: #73BBC9;
-    color: #0a3871;
-}
-
-
-#error{
-    font-size: large;
-    margin: 1vh;
-    position: relative;
-    bottom: 20px;
-    font-style: italic;
-}
 
 .clear_{
+    border: none;
     background: none;
-    width: 6vh;
+    width: 7vh;
     position: relative;
     left: 30vh;
     margin-top: 1vh;
 }
+
+.content-btn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75vh;
+    padding-top: 45px;
+}
+
+button{
+    font-size: medium;
+    padding: 2vh;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    border: 2px solid #0db4dd;
+}
+
+button:not(.clear_):hover{
+    background-color: #0db4dd;
+    color: white;
+}
+
+
+#error{
+    font-size: small;
+    position: relative;
+    font-style: italic;
+    color: #0db4dd;
+   
+}
+
 
 
 footer{
@@ -122,3 +123,11 @@ footer{
     margin: 10px auto;
 }
 
+/* responsive */
+
+/* Movil */
+
+@media only screen and (max-width: 360px) {
+    /* Estilos específicos para el Samsung Galaxy S8 Plus */
+    /* Agrega aquí tus estilos personalizados */
+  }
