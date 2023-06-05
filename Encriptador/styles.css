@@ -40,9 +40,11 @@ body{
 
 .box-text{
     border: 2px solid #0db4dd;
+    background: transparent;
     overflow: auto;
     width: 65vh;
     padding: 10px;
+
 }
 
 
@@ -51,8 +53,9 @@ body{
     width: 100%;
     border: none;
     font-size: medium;
-    color: white;
+    color: whitesmoke;
     padding-bottom: 3vh;
+    background:transparent;
 }
 
 
@@ -63,17 +66,23 @@ body{
     outline: none;
     border: none;
     font-size: medium;
-    color: white;
+    color: whitesmoke;
+    background: rgba(0,0,0,.5);
 }
 
 
 .clear_{
-    border: none;
-    background: none;
-    width: 7vh;
     position: relative;
-    left: 30vh;
-    margin-top: 1vh;
+    left: 32vh;
+    margin-top: 2vh;
+    background: transparent;
+    border: none;
+
+}
+
+.clear_ img{
+    width: 35px;
+    height: 35px;
 }
 
 .content-btn{
@@ -83,7 +92,7 @@ body{
     padding-top: 45px;
 }
 
-button{
+.btn{
     font-size: medium;
     padding: 2vh;
     color: whitesmoke;
@@ -91,12 +100,14 @@ button{
     cursor: pointer;
     width: 135px;
     border: 2px solid #0db4dd;
+    background: transparent;
 }
 
-button:not(.clear_):hover{
-    background-color: #0db4dd;
-    color: white;
+.btn:hover{
+    background:#0db4dd;
+    color: whitesmoke;
 }
+
 
 
 #error{
@@ -108,13 +119,17 @@ button:not(.clear_):hover{
 }
 
 
-
 footer{
     text-align: center;
-    color: var(--second-color);
+    color: whitesmoke;
+
+}
+
+footer h6{
     font-family: monospace;
     font-size: small;
 }
+
 
 .footer{
     justify-content: space-evenly;

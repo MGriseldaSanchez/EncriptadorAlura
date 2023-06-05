@@ -47,26 +47,28 @@
                     </div>
                     
             </div>
+
             <button onclick="limpiar()" class="clear_">
-                <img src="/Encriptador/img/borrador.png" alt="clear">
+                <img src="img/borrador.png" alt="clear">
             </button>
                                <!-- caja de mensaje de error -->
                             <div id="error">
                                 <span class="error"></span>
                             </div>
             <!-- caja con botones encriptar/desencriptar/copiar -->
+            
             <div class="content-btn">
                 <div class="encriptar">
-                    <button onclick="encriptador()">Encriptar</button>
+                    <button onclick="encriptador()" class="btn">Encriptar</button>
                 </div>
                 <!--  -->
                 <!-- boton copiar -->
                 <div class="copy">
-                    <button id="copiar" onclick="copiar()">Copiar</button>
+                    <button id="copiar" onclick="copiar()" class="btn">Copiar</button>
                 </div>
                 <!--  -->
                 <div>
-                    <button class="desencriptar" onclick="desencriptado()">Desencriptar</button>
+                    <button class="btn" onclick="desencriptado()">Desencriptar</button>
                 </div>
             </div>
 

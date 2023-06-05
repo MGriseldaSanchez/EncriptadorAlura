@@ -35,3 +35,14 @@ Extras:
 Buen proyecto!
 
 ---
+
+- reparar estilos rotos
+- hacer responsive breakpoint en movil.
+
+
+- se elimino bloque de codigo repetido en funcion desencriptado
+
+
+
+
+

@@ -104,18 +104,8 @@ const desencriptado = () => {
     // se escribe el resultado:
     result.innerHTML = descript;
 
-   
-
-  } else {
-
-    // msj de error
-    var error = document.querySelector(".error")
-    error.innerHTML = "No debe contener caracteres especiales ni acentos"
-    let clear_er =()=>{error.innerHTML=""}
-
-    setTimeout(clear_er,2000)
-
   }
+
 };
 
 // copia de texto
@@ -147,15 +137,12 @@ let limpiar=()=>{
   let input_texto = document.querySelector("#text")
   // span error (mensaje de error)
   let error = document.querySelector(".error")
-
   //reemplaza por cadena vacia
-
   // para acceder al contenido de texto
   box.textContent = "";
   // propiedad específica para los elementos de entrada de formulario.
   input_texto.value= "";
   error.textContent="";
-
   console.log("contenedor box funcionando");
 }
 
