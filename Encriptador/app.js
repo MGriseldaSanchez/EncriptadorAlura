@@ -1,29 +1,3 @@
-/**
- * Las "llaves" de encriptación que utilizaremos son las siguientes:
-
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-
-Requisitos:
-
-Debe funcionar solo con letras minúsculas
-No deben ser utilizados letras con acentos ni caracteres especiales
-Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
-
-La página debe tener campos para
-inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
-El resultado debe ser mostrado en la pantalla.
-Extras:
-
-Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
-
-
 
 /**Se realiza con dos metodos distintos: */
 
@@ -31,7 +5,7 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 // funcion encriptado
 /**
  * 1. se convierte el texto en un array con split()
- * 2.con un switch dentro de un for se recorre el array y se reemplaza en casa caso evaluado su respectivo valor
+ * 2.con un switch dentro de un for se recorre el array y se reemplaza en cada caso evaluado su respectivo valor
  * 3.se convierte nuevamente el array en cadena de caracteres con join()
  */
 
@@ -77,6 +51,7 @@ const encriptador = () => {
 
     let clear_er =()=>{error.innerHTML=""}
 
+    // se borra msj de error en 2 segundos
     setTimeout(clear_er,2000)
 
   }
@@ -104,6 +79,16 @@ const desencriptado = () => {
     // se escribe el resultado:
     result.innerHTML = descript;
 
+  }else {
+    // muestra msj de error
+    let error = document.querySelector(".error")
+    error.innerHTML = "No debe contener caracteres especiales ni acentos"
+
+    let clear_er =()=>{error.innerHTML=""}
+
+    // se borra msj de error en 2 segundos
+    setTimeout(clear_er,2000)
+
   }
 
 };
@@ -125,23 +110,23 @@ let copiar = ()=>{
    error.innerHTML = "Texto copiado con exito!"
 
   let msj_clear =()=>{error.innerHTML = ""}
-  // clear mensaje
+  // clear mensaje en 2 segundos
   setTimeout(msj_clear,2000)
 
 }
 
-// limpieza de campos
+// funcion limpieza de campos
 let limpiar=()=>{
   let box= document.querySelector(".box")
   // input type texto
   let input_texto = document.querySelector("#text")
-  // span error (mensaje de error)
+  
   let error = document.querySelector(".error")
   //reemplaza por cadena vacia
   // para acceder al contenido de texto
   box.textContent = "";
-  // propiedad específica para los elementos de entrada de formulario.
-  input_texto.value= "";
+  // 
+  input_texto.value= ""; /* propiedad específica para los elementos de entrada de formulario.*/
   error.textContent="";
   console.log("contenedor box funcionando");
 }
@@ -152,6 +137,8 @@ let limpiar=()=>{
  * se realiza cambios en estilos
  * se agrega funcion limpiar() que reemplaza en input,caja de texto encriptado/ desencriptado y mensajes de error por cadenas de texto vacia.
  * se limpia msjs de error con setTimeout()
+ * se corrige inconsistencias de estilos
+ * 
  */
 
 

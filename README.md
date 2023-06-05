@@ -1,8 +1,8 @@
-# Encriptador :smile:
+## Encriptador :smile:
 
-Durante estas cuatro semanas, vamos a trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
+Esta es una aplicación que encripta textos, desarrollado en HTML, CSS y JavaScript.
 
-Las "llaves" de encriptación que utilizaremos son las siguientes:
+Las "llaves" de encriptación que utiliza son las siguientes:
 
 * La letra "e" es convertida para "enter"
 * La letra "i" es convertida para "imes"
@@ -10,37 +10,27 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 * La letra "o" es convertida para "ober"
 * La letra "u" es convertida para "ufat"
 
-Requisitos:
+Funcionamiento:
 
-* Debe funcionar solo con letras minúsculas
-* No deben ser utilizados letras con acentos ni caracteres especiales
-* Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original
-Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
+* Funciona solo con letras minúsculas**.
+* No deben ser utilizadas letras con acentos ni caracteres especiales.
+* Convierte una palabra/frase en versión encriptada y realiza la funcionalidad inversa (convierte una palabra/frase encriptada a su versión original)
 
-* La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
-* El resultado debe ser mostrado en la pantalla.
----
-Extras:
+    Por ejemplo:    
+     "gato" => "gaitober"    
+     "gaitober" => "gato"
 
-* Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
-* Tenemos un periodo de tiempo de cuatro semanas para desarrollar el proyecto y vamos a trabajar con el sistema ágil de desarrollo, utilizando el Trello de la siguiente forma:
-* La columna Listos para iniciar presenta las tarjetas con elementos que aun no fueron desarrollados.
-* En la columna En Desarrollo estarán los elementos que estés desarrollando en el momento. Al iniciar una tarea, podrás mover la tarjeta que contiene dicha tarea para esta columna.
-* En la columna Pausado estarán los elementos que comenzaste a desarrollar, pero necesitaste parar por algún motivo.
-* Por fin, en la columna Concluido estarán los elementos ya concluidos.
-* El Trello es una herramienta de uso individual para que puedas controlar el progreso de tus actividades, pero no será evaluada.
-
-Buen proyecto!
-
+* La pagina contiene un campo para la inserción del texto que será encriptado o desencriptado, y el usuario tendra la opcion de encriptar, desencriptar y/o copiar el texto encriptado.
+* El resultado se retorna en otro campo, si se ingresa un texto con acento o caracteres especiales, el programa advertira al usuario con un mensaje.
 ---
 
-- reparar estilos rotos
-- hacer responsive breakpoint en movil.
+** _Si bien la funcionalidad de la aplicacion es basada en texto en minusculas, el programa convertira las letras mayusculas ingresadas a minusculas, no afectando su funcionalidad._
 
 
-- se elimino bloque de codigo repetido en funcion desencriptado
+
+
+
+
 
 
 
