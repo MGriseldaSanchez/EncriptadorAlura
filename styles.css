@@ -1,0 +1,148 @@
+/* reset all */
+@import url("/Encriptador/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Raleway:wght@100;200;400&display=swap');
+
+
+body{
+    background:linear-gradient(#141e30, #243b55);
+}
+
+.container-encript{
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto;
+    align-items: center;
+    width: max-content;
+    padding: 10vh;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    /* border-radius: 10px; */
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.logo-content{
+    flex: none;
+    position: relative;
+    right: 40vh;
+    bottom: 5vh;
+    margin-left: 5vh;
+}
+
+.title h1{
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 40px;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+.box-text{
+    border: 2px solid #0db4dd;
+    background: transparent;
+    overflow: auto;
+    width: 65vh;
+    padding: 10px;
+
+}
+
+
+#text{
+    outline: none;
+    width: 100%;
+    border: none;
+    font-size: medium;
+    color: whitesmoke;
+    padding-bottom: 3vh;
+    background:transparent;
+}
+
+
+
+.box-text .box{
+    display: inline;
+    word-wrap: break-word;
+    outline: none;
+    border: none;
+    font-size: medium;
+    color: whitesmoke;
+    background: rgba(0,0,0,.5);
+}
+
+
+.clear_{
+    position: relative;
+    left: 32vh;
+    margin-top: 2vh;
+    background: transparent;
+    border: none;
+
+}
+
+.clear_ img{
+    width: 35px;
+    height: 35px;
+}
+
+.content-btn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75vh;
+    padding-top: 45px;
+}
+
+.btn{
+    font-size: medium;
+    padding: 2vh;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    border: 2px solid #0db4dd;
+    background: transparent;
+}
+
+.btn:hover{
+    background:#0db4dd;
+    color: whitesmoke;
+}
+
+
+
+#error{
+    font-size: small;
+    position: relative;
+    font-style: italic;
+    color: #0db4dd;
+   
+}
+
+
+footer{
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+footer h6{
+    font-family: monospace;
+    font-size: small;
+}
+
+
+.footer{
+    justify-content: space-evenly;
+    display: flex;
+    width: 10vh;
+    margin: 10px auto;
+}
+
+/* responsive */
+
+/* Movil */
+
+@media only screen and (max-width: 360px) {
+    /* Estilos específicos para el Samsung Galaxy S8 Plus */
+    /* Agrega aquí tus estilos personalizados */
+  }
