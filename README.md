@@ -1,4 +1,4 @@
-## Encriptador :smile:
+## Encriptador 🧠:
 
 Esta es una aplicación que encripta textos, desarrollado en HTML, CSS y JavaScript.
 
