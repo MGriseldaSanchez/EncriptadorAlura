@@ -1,6 +1,4 @@
-
 /**Se realiza con dos metodos distintos: */
-
 
 // funcion encriptado
 /**
@@ -11,7 +9,7 @@
 
 const encriptador = () => {
   let text = document.getElementById("text").value;
- // uso de match() y expresion regular que identifica caracteres especiales y acentos
+  // uso de match() y expresion regular que identifica caracteres especiales y acentos
   let especiales = text.match(/[^\w\s.]/g);
   //console.log(especiales);
 
@@ -46,14 +44,15 @@ const encriptador = () => {
     result.innerHTML = toText;
   } else {
     // muestra msj de error
-    let error = document.querySelector(".error")
-    error.innerHTML = "No debe contener caracteres especiales ni acentos"
+    let error = document.querySelector(".error");
+    error.innerHTML = "No debe contener caracteres especiales ni acentos";
 
-    let clear_er =()=>{error.innerHTML=""}
+    let clear_er = () => {
+      error.innerHTML = "";
+    };
 
     // se borra msj de error en 2 segundos
-    setTimeout(clear_er,2000)
-
+    setTimeout(clear_er, 2000);
   }
 };
 
@@ -78,68 +77,56 @@ const desencriptado = () => {
 
     // se escribe el resultado:
     result.innerHTML = descript;
-
-  }else {
+  } else {
     // muestra msj de error
-    let error = document.querySelector(".error")
-    error.innerHTML = "No debe contener caracteres especiales ni acentos"
+    let error = document.querySelector(".error");
+    error.innerHTML = "No debe contener caracteres especiales ni acentos";
 
-    let clear_er =()=>{error.innerHTML=""}
+    let clear_er = () => {
+      error.innerHTML = "";
+    };
 
     // se borra msj de error en 2 segundos
-    setTimeout(clear_er,2000)
-
+    setTimeout(clear_er, 2000);
   }
-
 };
 
 // copia de texto
-let copiar = ()=>{
-  let codigoAcopiar = document.querySelector(".box")
+let copiar = () => {
+  let codigoAcopiar = document.querySelector(".box");
 
-  let seleccion = document.createRange()
+  let seleccion = document.createRange();
 
-  seleccion.selectNodeContents(codigoAcopiar)
-  window.getSelection().removeAllRanges()
-  window.getSelection().addRange(seleccion)
-  let res = document.execCommand("copy")
-  window.getSelection().removeRange(seleccion)
+  seleccion.selectNodeContents(codigoAcopiar);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(seleccion);
+  let res = document.execCommand("copy");
+  window.getSelection().removeRange(seleccion);
 
   // mensaje de que el texto fue copiado
-  var error = document.querySelector(".error")
-   error.innerHTML = "Texto copiado con exito!"
+  var error = document.querySelector(".error");
+  error.innerHTML = "Texto copiado con exito!";
 
-  let msj_clear =()=>{error.innerHTML = ""}
+  let msj_clear = () => {
+    error.innerHTML = "";
+  };
   // clear mensaje en 2 segundos
-  setTimeout(msj_clear,2000)
-
-}
+  setTimeout(msj_clear, 2000);
+};
 
 // funcion limpieza de campos
-let limpiar=()=>{
-  let box= document.querySelector(".box")
+let limpiar = () => {
+  let box = document.querySelector(".box");
   // input type texto
-  let input_texto = document.querySelector("#text")
-  
-  let error = document.querySelector(".error")
+  let input_texto = document.querySelector("#text");
+
+  let error = document.querySelector(".error");
   //reemplaza por cadena vacia
   // para acceder al contenido de texto
   box.textContent = "";
-  // 
-  input_texto.value= ""; /* propiedad específica para los elementos de entrada de formulario.*/
-  error.textContent="";
+  //
+  input_texto.value =
+    ""; /* propiedad específica para los elementos de entrada de formulario.*/
+  error.textContent = "";
   console.log("contenedor box funcionando");
-}
-
-
-/**
- * cambios:
- * se realiza cambios en estilos
- * se agrega funcion limpiar() que reemplaza en input,caja de texto encriptado/ desencriptado y mensajes de error por cadenas de texto vacia.
- * se limpia msjs de error con setTimeout()
- * se corrige inconsistencias de estilos
- * 
- */
-
-
-
+};

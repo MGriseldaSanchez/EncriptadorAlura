@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9893ac1a05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>Encriptador 🧠</title>
 </head>
@@ -16,7 +17,6 @@
     <header>
         <nav>
             <div class="logo">
-                <!-- <img src="img/Logo.png" alt="logo" width="100px"> -->
             </div>
         </nav>
     </header>
@@ -36,27 +36,23 @@
             </div>
             <!-- caja donde se introduce el texto -->
             <div class="box-text">
-
                 <div class="caja">
                     <input id="text" type="text" placeholder="Texto aqui" required>
                 </div>
-
-
-                    <!-- caja de texto encriptado/desencriptado -->
-                    <div class="box">
-                    </div>
-                    
+                <!-- caja de texto encriptado/desencriptado -->
+                <div class="box">
+                </div>
             </div>
 
             <button onclick="limpiar()" class="clear_">
                 <img src="img/borrador.png" alt="clear">
             </button>
-                               <!-- caja de mensaje de error -->
-                            <div id="error">
-                                <span class="error"></span>
-                            </div>
+            <!-- caja de mensaje de error -->
+            <div id="error">
+                <span class="error"></span>
+            </div>
             <!-- caja con botones encriptar/desencriptar/copiar -->
-            
+
             <div class="content-btn">
                 <div class="encriptar">
                     <button onclick="encriptador()" class="btn">Encriptar</button>
@@ -80,8 +76,10 @@
     <footer>
         <h6>Maria Griselda Sanchez/Todos los derechos reservados</h6>
         <div class="footer">
-            <a href="https://github.com/googlerax" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
-            <a href="https://www.linkedin.com/in/maria-griselda-sanchez/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+            <a href="https://github.com/googlerax" target="_blank"><i class="fa-brands fa-github fa-lg"
+                    style="color: #ffffff;"></i></a>
+            <a href="https://www.linkedin.com/in/maria-griselda-sanchez/" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
         </div>
     </footer>
 

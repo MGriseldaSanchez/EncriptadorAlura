@@ -1,10 +1,8 @@
-/* reset all */
-@import url("/Encriptador/reset.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Raleway:wght@100;200;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 body{
     background:linear-gradient(#141e30, #243b55);
+    font-family: 'Abel', sans-serif;;
 }
 
 .container-encript{

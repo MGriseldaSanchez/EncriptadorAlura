@@ -1,30 +1,4 @@
-/* mix between normalize and my resets */
-
-/* Customs properties  
--colores y fuentes principales
-*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-
-:root{
-    --primary-color: #181818;
-    --second-color: #f0f0f0;
-    --color-one: #00DFA2;
-    --principal-font: 'Poppins', sans-serif;
-    
-    /* se configura según la web */
-    /* --principal-font: helvetica, Arial, sans-serif;
-    --second-font: verdana; */
-}
-
-/* adapta modo oscuro */
-
-@media (prefers-color-scheme: dark){
-    .root{
-        --second-color: #181818;
-        --primary-color: #f0f0f0;
-    }
-}
-
+/* mix between normalize and my resets 👀 */
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
